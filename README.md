@@ -1,14 +1,19 @@
 # PhoenixBites
 
 This is a real-time app that loads the SODA API San Francisco food truck data.
-The api request is handled with the FoodTruckService and pulled in from https://data.sfgov.org/resource/rqzj-sfat.json. The results from this API are ordered by the backend according to their "objectid", ordering is not natively supported by the external SODA API.
+
+The api request is handled with the FoodTruckService and pulled in from https://data.sfgov.org/resource/rqzj-sfat.json.
+
+The results from this API are ordered by the backend according to their "objectid", ordering is not natively supported by the external SODA API.
+
 This app is real-time because it allows users to "Like" Food Trucks and the likes are propagated immediately to other users that have the site open.
 
 Phoenix: 1.7.14
 Erlang: 24.3.4.17
 
 Realtime Demo:
-![image](https://github.com/user-attachments/assets/890a4794-8253-4d93-ba71-97562208ed74)
+https://github.com/user-attachments/assets/d6a4dfb4-1325-439a-8710-0075ba15be96
+
 
 
 To start your Phoenix server:
