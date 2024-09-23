@@ -12,7 +12,11 @@ Phoenix: 1.7.14
 Erlang: 24.3.4.17
 
 Realtime Demo:
-https://github.com/user-attachments/assets/d6a4dfb4-1325-439a-8710-0075ba15be96
+
+
+
+https://github.com/user-attachments/assets/dae22dd6-abf6-4317-8322-2ae980c67136
+
 
 
 
