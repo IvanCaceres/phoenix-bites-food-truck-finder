@@ -9,7 +9,6 @@ defmodule PhoenixBites.Application do
   def start(_type, _args) do
     children = [
       PhoenixBitesWeb.Telemetry,
-      PhoenixBites.Repo,
       {DNSCluster, query: Application.get_env(:phoenix_bites, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: PhoenixBites.PubSub},
       # Start the Finch HTTP client for sending emails

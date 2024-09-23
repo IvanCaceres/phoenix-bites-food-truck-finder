@@ -3,7 +3,6 @@ defmodule PhoenixBites.FoodTruckService do
   A service module for interacting with external APIs to retrieve food truck data.
   """
 
-  alias HTTPoison
   alias Jason
 
   # SODA API Endpoint for open San Francisco food truck data
@@ -12,9 +11,10 @@ defmodule PhoenixBites.FoodTruckService do
   @doc """
   Fetches the list of food trucks from the external API.
   Returns {:ok, food_trucks} on success, or {:error, reason} on failure.
+  Support dependency injection by allowing the HTTP client to be passed in for mocking/testing.
   """
-  def get_food_trucks do
-    case HTTPoison.get(@api_url) do
+  def get_food_trucks(client \\ PhoenixBites.HttpClientHTTPoison) do
+    case client.get(@api_url) do
       {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
         case Jason.decode(body) do
           {:ok, food_trucks} -> {:ok, food_trucks}

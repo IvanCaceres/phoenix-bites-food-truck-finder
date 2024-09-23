@@ -1,2 +1,2 @@
 ExUnit.start()
-Ecto.Adapters.SQL.Sandbox.mode(PhoenixBites.Repo, :manual)
+Mox.defmock(PhoenixBites.HttpClientMock, for: PhoenixBites.HttpClient)

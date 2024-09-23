@@ -8,7 +8,6 @@
 import Config
 
 config :phoenix_bites,
-  ecto_repos: [PhoenixBites.Repo],
   generators: [timestamp_type: :utc_datetime]
 
 # Configures the endpoint

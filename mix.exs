@@ -52,6 +52,7 @@ defmodule PhoenixBites.MixProject do
        compile: false,
        depth: 1},
       {:httpoison, "~> 2.0"},
+      {:mox, "~> 1.0", only: :test},
       {:swoosh, "~> 1.5"},
       {:finch, "~> 0.13"},
       {:telemetry_metrics, "~> 1.0"},
