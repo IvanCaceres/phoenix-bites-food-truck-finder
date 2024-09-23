@@ -4,6 +4,11 @@ This app includes a docker-compose.yml for ease of use to get up and running.
 - `docker-compose up`
 - Open your browser and navigate to `http://localhost:4000`
 
+## Testing
+This application includes unit tests for the FoodTruckService http fetching functionality.
+
+Run tests with `mix test`
+
 # PhoenixBites
 This is a real-time app that loads the SODA API San Francisco food truck data. The app is named after the Phoenix framework and because the term "Bites" is often used colloquially in relation to food.
 
