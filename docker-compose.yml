@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  phoenix:
+    image: elixir:1.14.5-slim
+    container_name: phoenix_app
+    environment:
+      - MIX_ENV=dev
+      - SECRET_KEY_BASE=insecure_secret_key_base # Change for production
+    volumes:
+      - .:/app
+    working_dir: /app
+    ports:
+      - "4000:4000"
+    command: >
+      /bin/sh -c "
+      apt-get update &&
+      apt-get install -y git &&
+      mix local.hex --force &&
+      mix local.rebar --force &&
+      mix deps.get &&
+      mix phx.server"
