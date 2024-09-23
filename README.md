@@ -9,6 +9,7 @@ The results from this API are ordered by the backend according to their "objecti
 This app is real-time because it allows users to "Like" Food Trucks and the likes are propagated immediately to other users that have the site open.
 
 Phoenix: 1.7.14
+
 Erlang: 24.3.4.17
 
 Realtime Demo:
