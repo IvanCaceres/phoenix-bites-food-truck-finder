@@ -1,0 +1,3 @@
+<%= for food_truck <- @food_trucks do %>
+  <.live_component module={FoodTruckCard} id={food_truck["objectid"]} food_truck={food_truck} />
+<% end %>
